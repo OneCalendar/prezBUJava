@@ -70,7 +70,6 @@
                     </section>
 					<section>
 						<h2>OneCalendar! c'est qui ?</h2>
-						<p>
                         <p>
                             <small><a href="#">Amira Lakhal</a> / <a href="http://twitter.com/MiraLak">@MiraLak</a></small><br/>
                             <small>& <a href="#">Nicolas Bétheuil</a> / <a href="http://twitter.com/wadouk">@wadouk</a></small><br/>
@@ -78,7 +77,6 @@
                             <small>& <a href="http://demon-agile.blogspot.com/">Ugo Bourdon</a> / <a href="http://twitter.com/ugobourdon">@ugobourdon</a></small><br/>
                             <small>& <a href="#">Patrick Manoukian</a> / <a href="http://twitter.com/BabylonZeus">@BabylonZeus</a></small>
                         </p>
-						</p>
 					</section>
 					<section>
 						<h2>OneCalendar! c'est fun !</h2>
@@ -131,7 +129,7 @@
                     </section>
                     <section>
                         <h2>Scala</h2>
-                        <p>List(1,2,3) map (x => x * 2) filter (x => x < 4)</p>
+                        <pre><code contenteditable>List(1,2,3) map (x => x * 2) filter (x => x < 4)</code></pre>
                     </section>
 
                     <section>
@@ -165,39 +163,53 @@
                     </section>
 				</section>
 
-				<section>
-					<h2>Mais aussi les pratiques !</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+                <section>
+                    <section>
+                        <h2>Mais aussi les pratiques !</h2>
+                    </section>
+                    <section>
+                        <h2>eXtreme programming</h2>
+                        <ul>
+                            <li>TDD + pair programming (meme au niveau code client)</li>
+                            <li>KISS - Keep it Simple & Stupid</li>
+                            <li>DRY - Don't repeat yourself</li>
+                            <li>Clean Code - le code est écrit pour nos collègues avant tout pas pour la machine</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>ultra-itération - développement piloté par le feedback</h2>
+                        <p>en clair, le choix d'une "feature" est dicté par la valeure mais fortement pondéré par le temps que mettra, le feedback sur cette hypothèse, à nous parvenir</p>
+                        <p>le but est d'itérer le plus rapidement possible, donc avec les plus petit pas possible, de livrer plusieurs mini feature par jour</p>
+                        <p>next-step = le cycle produire-mesurer-apprendre à mener jusqu'en production</p>
+                    </section>
+                    <section>
+                        <h2>design collaboratif</h2>
+                        <p>Les décisions sont des décisions d'équipe</p>
+                        <p>On n'intérompt pas un collègue, on le fait participer aux décisions</p>
+                    </section>
+                </section>
 
                 <section>
                     <h2>OneCalendar! extensions</h2>
-                    <p>
                     <ul>
                         <li>Cours du soir scala</li>
                         <li>Articles de blog</li>
                         <li>Soirée Dojo Scala (PSUG)</li>
                         <li>Développement d'outils et de lib pour le dev (scala, web, bdd, qualité ...)</li>
                         <li>Expérimentation de "best practices" (xp, lean, ...)</li>
-                        <ul>
-                    </p>
+                    <ul>
                 </section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>La suite</h2>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li>autres fonctionalité à venir</li>
+						<li>...</li>
+						<li>..</li>
 					</ol>
 				</section>
 
-				<section data-markdown>
+				<!--<section data-markdown>
 					<script type="text/template">
 						## Markdown support
 
@@ -210,9 +222,9 @@
 							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
 							</section>
 					</script>
-				</section>
+				</section>-->
 
-				<section id="transitions">
+				<!--<section id="transitions">
 					<h2>Transition Styles</h2>
 					<p>
 						You can select from different transitions, like: <br>
@@ -242,58 +254,58 @@
 							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
 						</small>
 					</p>
-				</section>
+				</section>-->
 
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
-					</section>
-				</section>
+                <!--<section>
+                         <section data-state="alert">
+                             <h2>Global State</h2>
+                             <p>
+                                 Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+                                 will be added as a class to the document element when the slide is open. This lets you
+                                 apply broader style changes, like switching the background.
+                             </p>
+                             <a href="#" class="image navigate-down">
+                                 <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                             </a>
+                         </section>
+                         <section data-state="blackout">
+                             <h2>"blackout"</h2>
+                             <a href="#" class="image navigate-down">
+                                 <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                             </a>
+                         </section>
+                         <section data-state="soothe">
+                             <h2>"soothe"</h2>
+                             <a href="#" class="image navigate-next">
+                                 <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
+                             </a>
+                         </section>
+                     </section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+                     <section data-state="customevent">
+                         <h2>Custom Events</h2>
+                         <p>
+                             Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+                         </p>
+                         <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
+         console.log( '"customevent" has fired' );
+     } );
+                         </code></pre>
+                     </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
+                     <section>
+                         <h2>Clever Quotes</h2>
+                         <p>
+                             These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                             The nice thing about standards is that there are so many to choose from</q> and block:
+                         </p>
+                         <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                             For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+                             reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
+                         </blockquote>
+                     </section>-->
 
-				<section>
+				<!--<section>
 					<h2>Pretty Code</h2>
 					<pre><code contenteditable>
 function linkify( selector ) {
@@ -404,7 +416,7 @@ function linkify( selector ) {
 				<section>
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+				</section>-->
 
 			</div>
 
