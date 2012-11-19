@@ -146,6 +146,23 @@
                             <li>un petit problème, pas facile à tester (au niveau des controlleurs) unitairement pour des raisons de conception ( Sadek pourquoi n'aimes-tu pas le TDD ? :) )</li>
                         </ul>
                     </section>
+                    <section>
+                        <h2>Playframework!</h2>
+                        <pre><code contenteditable>
+    GET     /eventCount        controllers.Application.eventCount
+                        </code></pre>
+                        <pre><code contenteditable>
+    def eventCount(implicit now: () => Long) = Action {
+        val jsonResponse = """{"eventNumber":"%s"}"""
+                .format(EventDao.countFutureEvents)
+
+        Ok(jsonResponse).as("application/json")
+    }
+                        </code></pre>
+                    </section>
+                    <!--def index = Action {
+                    Ok(views.html.index())
+                    }-->
 
                     <section>
                         <h2>MongoDb</h2>
