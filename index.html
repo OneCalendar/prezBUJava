@@ -62,7 +62,7 @@
                             OneCalendar! m'offre un moteur de recherche, qui me permet, via des mots clés saisis, de m'abonner à des flux d'évènements, par exemple sur java.
                         </p>
                         <p>
-                            OneCalendar! me fournit un flux ICalendar, pris en compte par tout bon client d'agenda, comme ICal d'apple, google agenda ou microsoft outlook.
+                            OneCalendar! me fournit un flux <span style="color: red;">ICalendar</span>, pris en compte par tout bon client d'agenda, comme ICal d'apple, google agenda ou microsoft outlook.
                         </p>
                         <a href="onecalendar.valtech.fr/about" class="image navigate-down">
                             <img width="200" height="150" src="img/why.png" alt="why onecalendar!">
@@ -130,7 +130,15 @@
                     </section>
                     <section>
                         <h2>Scala</h2>
-                        <pre><code contenteditable>List(1,2,3) map (x => x * 2) filter (x => x < 4)</code></pre>
+                        <pre><code contenteditable>case class Toto(name: String = "titi")</code></pre>
+                        <pre><code contenteditable>val t = Toto(); val o = Toto("bobby")</code></pre>
+                        <pre><code contenteditable>t.name    // > res0: String = "titi"</code></pre>
+                        <pre><code contenteditable>o.name    // > res1: String = "bobby"</code></pre><br/>
+
+                        <pre><code contenteditable>val result = List(1,2,3) map (x => x * 2) filter (x => x < 4)</code></pre>
+                        <pre><code contenteditable>result should be (List(2))</code></pre><br/>
+
+                        <pre><code contenteditable>new MyClass() with ProdDepInjection</code></pre><br/>
                     </section>
 
                     <section>
